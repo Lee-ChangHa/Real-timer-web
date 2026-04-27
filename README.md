@@ -15,7 +15,7 @@
 - **Frontend:** HTML5, CSS3, Vanilla JS (Fetch API)
 
 ## 3. 시스템 아키텍처 (Architecture)
-![Architecture Diagram](아키텍처_이미지_링크)
+
 - **Security:** ALB를 통한 SSL/TLS Termination 처리 및 전구간 HTTPS 적용
 - **Network:** Database를 Private Subnet에 배치하여 외부 접근 원천 차단
 - **Scalability:** AWS 리소스를 활용한 3-Tier 계층 분리 설계
