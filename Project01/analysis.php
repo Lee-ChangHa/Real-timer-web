@@ -1,11 +1,11 @@
 <?php
-error_reporting(0); // 운영 단계에서는 에러 숨김
+error_reporting(0); 
 date_default_timezone_set('Asia/Seoul'); 
 session_start();
 
 if (!isset($_SESSION['user_id'])) { header("Location: login_page.php"); exit; }
 
-$conn = new mysqli("ung-db.cpmsuo4eyfec.ap-northeast-2.rds.amazonaws.com", "admin", "indionce", "ung_db");
+$conn = new mysqli("[end-point]", "[db-user]", "[password]", "[database-name]");
 $user_id = $_SESSION['user_id'];
 $nickname = $_SESSION['nickname'];
 
